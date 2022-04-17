@@ -1,0 +1,33 @@
+{
+  "name": "compress-image",
+  "version": "0.1.0",
+  "description": "Image Compressor Script",
+  "private": true,
+  "main": "",
+  "config": {
+    "jpeg": {
+      "quality": 80
+    },
+    "png": {
+      "quality": [
+        0.6,
+        0.8
+      ]
+    },
+    "webp": {
+      "quality": 80
+    }
+  },
+  "scripts": {
+    "build": "npm run clean && node tasks/compress.mjs",
+    "clean": "rm -rf ./build/*"
+  },
+  "dependencies": {
+    "imagemin": "^8.0.1",
+    "imagemin-jpegtran": "^7.0.0",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "imagemin-webp": "^7.0.0",
+    "imagemin-webpack-plugin": "^2.4.2"
+  }
+}

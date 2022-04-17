@@ -5,5 +5,5 @@ git clone https://github.com/R00T80Y/compress-image
 cd compress-image && npm install
 ~~~
 
-## Build
+## Compress
 Add your images to `<src>` folder and run `npm run build`
